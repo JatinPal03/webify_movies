@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style> 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box ;
+    padding: 0%;
+    margin: 0% ;
+}
+
+body{
+    background-color: #18002a ;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60vh; 
+    display: flex;
+    flex-flow: column;
+    background: linear-gradient(rgb(0, 0, 0 ,.1) , rgba(23, 0, 28, 0.8)) , url('https://st1.bgr.in/wp-content/uploads/2022/01/OTT-Netflix.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+header h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 200%;
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    font-size: 90px;
+    color: #ffffff ;
+    margin-bottom: 0px ;
+    margin: 20px;
+}
+
+header p {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff ;
+}
+
+.content{
+    padding-top: 20px;
+    background: linear-gradient(rgb(61, 1, 63 , .1) ,(rgb(0,0,0)));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient( rgb(78, 77, 77) , rgb(32, 31, 31) ) ;
+    border-radius:8px;
+}
+
+.box p {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255 , .5);
+} 
+
+footer{
+    height:100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: larger;
+    text-align: center;  
+    background-color: black;          
+}
+
+footer li ,a{ padding: 8px;
+    color: white;
+    list-style-type: none;
+text-decoration: none; }
+
+@media screen and (max-width: 800px) {
+    header h1{margin:20px;
+        font-size: 80px; 
+        line-height: normal;
+    }
+    header{
+        height: 45vh;
+    }
+}
+    </style>
+</head>
+<!-- This is just a basic code,
+    You are allowed to -
+    1. change any image .
+    2. add extra content if you want 
+    etc. except changing the basic content of the page , you can add,replace or shift any content.
+    But, your are not allowed to increase the number of pages.
+
+-->
+<body>
+    <header>
+        <h1>Binge watch</h1>
+        <p>Watch world's best shows & movies</p>
+    </header>
+    <div class="content">
+        <div class="box">
+            <a href="Horror\horror.html" target="_blank">
+                <img width="250px" height="250px" class="card-img-top" src="https://img.freepik.com/premium-photo/3d-illustration-halloween-concept-background-castle-graveyard-horror-background_685067-358.jpg?w=2000" alt="">
+            </a>
+            <p >Horror</p>
+        </div>
+
+        <div class="box">
+            <a href="Romantic-comedy/romcom1.html" target="_blank">
+                <img width="250px" height="250px" class="card-img-top" src="https://media.istockphoto.com/id/875970634/vector/romantic-film-glyphs-vector-icon.jpg?s=612x612&w=0&k=20&c=s5BrM29Vxgtc9FI3yxT56XCSsSzYq1U18uxTjnkZnc0=" alt="">
+            </a>
+            <p >Romantic-Comedy</p>
+        </div>
+    
+        <div class="box">
+            <a href="Thrilling-Mysteries/design.html" target="_blank">
+                <img width="250px" height="250px" class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN3BwZUKUNBKKDbIeSwvZr5aFHNetxLhLMHdpG5qqlnZ24xtGk2C9YLpWXXZHaZT-D9M&usqp=CAU" alt="">
+            </a>
+            <p >Mystery</p>
+        </div>
+
+        <div class="box">
+            <a href="Animation/animated.html" target="_blank">
+                <img width="250px" height="250px" class="card-img-top" src="https://cloudfront-us-east-1.images.arcpublishing.com/culturacolectiva/5G6WCFYU7NACZBZ3AHZ7ICQQFU.jpg" alt="">
+            </a>
+            <p >Anime</p>
+        </div>
+
+        <div class="box">
+            <a href="Action/action_movies.html" target="_blank">
+                <img width="250px" height="250px" class="card-img-top" src="https://cdn.thecoolist.com/wp-content/uploads/2016/08/Blackhawk-Down-best-action-movie-960x540.jpg" alt="">
+            </a>
+            <p >Action</p>
+        </div>
+    </div>  
+
+    <footer>
+        <ul>
+            <li><a target="_blank" href="About.html">About you</a></li>
+            <li><a target="_blank" href="https://www.facebook.com/petrichor.iitpkd">Facebook</a></li>
+            <li><a target="_blank" href="https://instagram.com/petrichor.iitpkd?igshid=MDM4ZDc5MmU=">Instagram</a></li>
+        </ul>    
+    </footer>
+</body>
+</html>

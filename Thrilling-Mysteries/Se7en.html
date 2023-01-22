@@ -1,0 +1,305 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se7en</title>
+</head>
+<body>
+    <img width="300px" height="300px" src="https://i.pinimg.com/originals/e5/4c/84/e54c844024a3f5823f5f6532ace4c92f.jpg">
+    <h1>Se7en</h1>
+    <p>Trailer:</p>
+    <p>duration:</p>
+    <p>Short description:</p>
+    <p>rating:</p>
+    <p>reviews:</p>
+    <p>release date:</p>
+    <p>Where to watch:</p>
+    <p>Cast</p>
+    <h1>Similar movies:</h1>
+    <div>
+        <a href="Mirror game.html">
+            <img width="250px" height="250px" src="https://m.media-amazon.com/images/M/MV5BMmVmYWFkYWMtOThhZC00Y2VkLTkyNjMtYTBkNmE2ZTNlNmQzXkEyXkFqcGdeQXVyNjMxNjgwOTk@._V1_.jpg" alt="">
+        </a>
+        <a href="Rear Window.html">
+            <img width="250px" height="250px" src="https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/104405/Rear-Window%20poster%20fandango.jpg" alt="">
+        </a>
+        <a href="Thrilling-Mysteries\Se7en.html">
+            <img width="250px" height="250px" src="https://i.pinimg.com/originals/e5/4c/84/e54c844024a3f5823f5f6532ace4c92f.jpg" alt="">
+        </a>
+        <a href="The Lives of the Others.html">
+            <img width="250px" height="250px" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26e5e3ac050ed4af3c1ad353dc51777909324d85222c69d1e1abc8864e57ea33._RI_V_TTW_.jpg" alt="">
+        </a>
+        <a href="The Silence of the Lambs.html">
+            <img width="250px" height="250px" src="https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="">
+        </a>
+
+    </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Se7en</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    box-sizing: border-box ;
+    padding: 0%;
+    margin: 0% ;
+} 
+
+body{
+    background-color: rgb(26, 0, 32);
+    width: 100%; 
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width: 80%;
+    height: 92%;
+    border: 1px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px -6px rgb(78, 3, 86);
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background: url('https://i.pinimg.com/originals/e5/4c/84/e54c844024a3f5823f5f6532ace4c92f.jpg') no-repeat  ;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+    z-index: -1;
+}
+
+header .content {
+    position: relative;
+    color: white;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+header .box{
+    background: rgb(42, 1, 52 , .6);
+    position: relative;
+    width: 30%;
+    padding-left: 20px;
+}
+header .content #title{
+    font-size: 50px;
+    line-height: 45px; ;
+    text-transform: capitalize;
+}
+
+header .content .btns {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .content .btns a{
+    padding: 8px 12px;
+    font-size: 15px;
+    font-weight: 600;
+    background: linear-gradient(90deg , rgb(230, 0, 255) , rgb(119, 3, 252));
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    border-radius: 5px;
+    animation: button 2s linear infinite;
+}
+
+header .content .details h4 span{
+    background-color: yellow;
+    color: black;
+    padding: 0px 3px;
+    margin: 0px 5px 0px 10px;
+    font-weight: 500;
+}
+
+
+
+
+header section{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 0px 50px;
+    bottom: 20px;
+    color: white;
+} 
+
+header section .cards{
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid white; */
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
+header section .cards::-webkit-scrollbar{
+    display: none;
+}
+
+header section .cards .card{
+    position: relative;
+    min-width: 130px;
+    
+    height: 180px;
+    /* border: 1px solid white; */
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    background: black;
+    transition: .3s linear;
+}
+
+
+header section .cards .card .poster{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    position: relative;
+}
+
+header section .cards .card.card:hover{
+    min-width: 200px;
+    overflow: hidden;
+}
+
+header section .cards .card .rest_cards::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, black);
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+header section .cards .card .rest_cards .cont{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    color: rgb(255, 255, 255);
+    padding: 0px 20px;
+}
+
+header section .cards .card .rest_cards {
+    opacity: 1;
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="content"> 
+            <!-- <img width="300px" height="300px" src="https://i.pinimg.com/originals/03/5a/1e/035a1e61ba9e4b1fd767bf8066c6f45e.jpg" alt=""> -->
+           <div class="box">
+                <h1 id="title">Se7en</h1>
+
+                <div class="btns">
+                    <a href="#" id="play">Trailer <i class="bi bi-play-circle"></i></a>
+                    <p style="color: goldenrod; padding-left: 10px;"><strong>2hr 58min</strong></p>
+                </div>
+                
+                <p style="padding-left:8px;">A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man .
+
+                </p>
+                
+                <div class="details" >
+                    <h4 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</h4>
+                    <h4 style="padding-left:8px;">2021</h4>
+                    <h5 style="padding-left:8px; padding-bottom: 10px;">A netflix original film</h5>
+                </div>
+                <!-- <p>Cast:</p> -->
+            </div>
+        </div>
+
+        <section>
+            <h1>Similar movies:</h1>
+            <div class="cards">
+                <a href="
+                The Lives of the Others.html
+                " class="card">
+                    <img class="poster" width="250px" height="250px" 
+                    src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/26e5e3ac050ed4af3c1ad353dc51777909324d85222c69d1e1abc8864e57ea33._RI_V_TTW_.jpg
+                    " alt="">
+                    <div class="rest_cards">
+                        <div class="cont">
+                            <!-- <h4>Alien</h4> -->
+                        </div>
+                    </div>
+                </a>
+                <a href="
+                Mirror game.html
+                " class="card">
+                    <img class="poster" width="250px" height="250px" 
+                    src="https://m.media-amazon.com/images/M/MV5BMmVmYWFkYWMtOThhZC00Y2VkLTkyNjMtYTBkNmE2ZTNlNmQzXkEyXkFqcGdeQXVyNjMxNjgwOTk@._V1_.jpg" alt="">
+                    <div class="rest_cards">
+                        <div class="cont">
+                            <!-- <h4>Shining</h4> -->
+                        </div>
+                    </div>
+                </a>
+                <a href="
+                The Silence of the Lambs.html
+                " class="card">
+                    <img class="poster" width="250px" height="250px"  
+                    src="https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" alt="">
+                    <div class="rest_cards">
+                        <div class="cont">
+                            <!-- <h4>Tumbbad</h4> -->
+                        </div>
+                    </div>
+                </a>
+                <a href="
+                Rear Window.html
+                " class="card">
+                    <img class="poster" width="250px" height="250px" 
+                    src="
+                    https://images.fandango.com/ImageRenderer/400/0/redesign/static/img/default_poster.png/0/images/masterrepository/fandango/104405/Rear-Window%20poster%20fandango.jpg
+                    " alt="">
+                    <div class="rest_cards">
+                        <div class="cont">
+                            <!-- <h4>Thing</h4> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </header>
+</body>
+</html>
